@@ -31,32 +31,28 @@
         return new Promise((resolve) => setTimeout(resolve, time));
     }
     sleep(100).then(() => {
-    let startBtn = document.getElementById('start-button');
-    let stopBtn = document.getElementById('pause-button');
-  
-    let count = 00;
-  
-    startBtn.addEventListener('click', function () {
-        timer = true;
-        stopWatch();
-    });
-  
-    stopBtn.addEventListener('click', function () {
-        timer = false;
-    });
-  
-    function stopWatch() {
-        if (timer) {
-            count++;
-            let countString = count;
-            if (count < 10) {
-                countString = "0" + countString;
+        let startBtn = document.getElementById('start-button');
+        let stopBtn = document.getElementById('pause-button');
+    
+        let count = 00;
+    
+        startBtn.addEventListener('click', function () {
+            timer = true;
+            stopWatch();
+        });
+    
+        stopBtn.addEventListener('click', function () {
+            timer = false;
+        });
+    
+        function stopWatch() {
+            if (timer) {
+                count++;
+                document.getElementById('count').innerHTML = countString + "s";
+                setTimeout(stopWatch, 1000);
             }
-            document.getElementById('count').innerHTML = countString + "s";
-            setTimeout(stopWatch, 1000);
         }
-    }
-})
+    })
 </script>
 <body>
     <div 

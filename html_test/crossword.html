@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword</title>
+</head>
+<script>
+    function sleep (time) {
+        return new Promise((resolve) => setTimeout(resolve, time));
+    }
+    sleep(100).then(() => {
+        var element = document.getElementById('game');
+        injection = "";
+        words = ["*ttt*","ttttt","ttttt","ttttt","*ttt*"]
+        words.forEach(word => {
+            word.split('').forEach(char => {
+                if (char == '*') {
+                    injection += "<div style='background-color: black;'></div>"
+                } else {
+                    injection += "<input type='text' maxlength='1'  style='font-size: 100px; text-align: center;'></input>"
+                }
+            })
+        });
+        element.innerHTML = injection;
+    });
+</script>
+<script>
+    function sleep (time) {
+        return new Promise((resolve) => setTimeout(resolve, time));
+    }
+    sleep(100).then(() => {
+    let startBtn = document.getElementById('start-button');
+    let stopBtn = document.getElementById('pause-button');
+  
+    let count = 00;
+  
+    startBtn.addEventListener('click', function () {
+        timer = true;
+        stopWatch();
+    });
+  
+    stopBtn.addEventListener('click', function () {
+        timer = false;
+    });
+  
+    function stopWatch() {
+        if (timer) {
+            count++;
+            let countString = count;
+            if (count < 10) {
+                countString = "0" + countString;
+            }
+            document.getElementById('count').innerHTML = countString + "s";
+            setTimeout(stopWatch, 1000);
+        }
+    }
+})
+</script>
+<body>
+    <div 
+        class="wrapper" 
+        id="game"
+        style='
+            width: 600px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(5, 100px);
+            grid-auto-flow: column;
+        '
+    >
+    </div>
+    <div 
+        class="footer"
+        style="display: flex;
+        flex-direction: row;
+        "
+    >
+        <div
+            class="submission"
+            style="
+                padding-top: 5px;
+            "
+        >
+            <button id="start-button">Start</button>
+            <button id="pause-button">Pause</button>
+            <button>Save</button>
+            <button>Submit</button>
+        </div>
+        <span 
+            id="count"
+            style="
+                margin-left: 10px;
+                margin-top: 7px;
+            "
+
+        ></span>
+    </div>
+</body>
+</html>

@@ -95,7 +95,7 @@ CREATE TABLE TutorSession
 (
     sessionID INTEGER AUTO_INCREMENT NOT NULL,
     tutorID   INTEGER                NOT NULL UNIQUE,
-    playerID INTEGER                NOT NULL UNIQUE,
+    playerID  INTEGER                NOT NULL UNIQUE,
     hours     INT                    NOT NULL,
     rate      FLOAT                  NOT NULL,
     totalPay  FLOAT                  NOT NULL,
@@ -108,9 +108,9 @@ CREATE TABLE TutorSession
 
 CREATE TABLE Submission
 (
-    attemptId        INTEGER NOT NULL UNIQUE,
-    submissionNumber INT     NOT NULL,
-    numIncorrect     INT     NOT NULL,
+    submissionNumber INTEGER     NOT NULL,
+    attemptId        INTEGER     NOT NULL UNIQUE,
+    numIncorrect     INTEGER     NOT NULL,
     PRIMARY KEY (attemptId, submissionNumber),
     CONSTRAINT FOREIGN KEY (attemptId) REFERENCES GameAttempt (attemptId) ON UPDATE CASCADE ON DELETE CASCADE
 );
@@ -118,15 +118,15 @@ CREATE TABLE Submission
 
 CREATE TABLE Guesses
 (
-    attemptId        INTEGER NOT NULL UNIQUE,
-    submissionNumber INTEGER NOT NULL,
+    attemptId        INTEGER NOT NULL,
+    submissionNumber INTEGER     NOT NULL,
     valueRow         INTEGER NOT NULL,
     valueColumn      INTEGER NOT NULL,
     charValue        char(1),
-    PRIMARY KEY (attemptId, submissionNumber, valueRow, valueColumn),
-    CONSTRAINT FOREIGN KEY (attemptId) REFERENCES Submission (attemptId) ON UPDATE CASCADE ON DELETE CASCADE,
-    CONSTRAINT FOREIGN KEY (submissionNumber) REFERENCES Submission (submissionNumber) ON UPDATE CASCADE ON DELETE CASCADE
+    PRIMARY KEY (attemptId, valueRow, valueColumn),
+    CONSTRAINT FOREIGN KEY (attemptId, submissionNumber) REFERENCES Submission (attemptId, submissionNumber) ON UPDATE CASCADE ON DELETE CASCADE
 );
+
 
 CREATE TABLE BackgroundCheck
 (

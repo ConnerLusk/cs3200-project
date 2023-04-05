@@ -4,13 +4,12 @@ USE KLMVGames;
 CREATE TABLE Tutor
 (
     tutorID    INTEGER AUTO_INCREMENT NOT NULL,
-    f_name     varchar(50)            NOT NULL,
-    l_name     varchar(50)            NOT NULL,
-    email      varchar(50)            NOT NULL,
-    background varchar(255),
+    f_name     VARCHAR(50)            NOT NULL,
+    l_name     VARCHAR(50)            NOT NULL,
+    email      VARCHAR(50)            NOT NULL,
+    background VARCHAR(255),
     skill      INTEGER,
     PRIMARY KEY (tutorID),
-
     CONSTRAINT skill CHECK (skill BETWEEN 0 AND 5)
 );
 
@@ -25,10 +24,10 @@ CREATE TABLE Department
 CREATE TABLE Player
 (
     playerID  INTEGER AUTO_INCREMENT NOT NULL,
-    isPremium boolean                NOT NULL,
-    f_name    varchar(50)            NOT NULL,
-    l_name    varchar(50)            NOT NULL,
-    email     varchar(50)            NOT NULL,
+    isPremium BOOLEAN                NOT NULL,
+    f_name    VARCHAR(50)            NOT NULL,
+    l_name    VARCHAR(50)            NOT NULL,
+    email     VARCHAR(50)            NOT NULL,
     birthday  DATE,
     PRIMARY KEY (playerID)
 );
@@ -43,9 +42,9 @@ CREATE TABLE Project
 
 CREATE TABLE GameType
 (
-    gameName    varchar(50) NOT NULL UNIQUE,
-    rules       varchar(255),
-    descrip     varchar(255),
+    gameName VARCHAR(50) NOT NULL UNIQUE,
+    rules    VARCHAR(255),
+    descrip  VARCHAR(255),
     PRIMARY KEY (gameName)
 );
 
@@ -53,12 +52,12 @@ CREATE TABLE GameType
 CREATE TABLE Engineer
 (
     employeeId      INTEGER AUTO_INCREMENT NOT NULL,
-    projectCodeName varchar(50)            NOT NULL,
+    projectCodeName VARCHAR(50)            NOT NULL,
     departmentID    INTEGER                NOT NULL,
-    title           varchar(50),
-    f_name          varchar(50)            NOT NULL,
-    l_name          varchar(50)            NOT NULL,
-    salary          int                    NOT NULL,
+    title           VARCHAR(50),
+    f_name          VARCHAR(50)            NOT NULL,
+    l_name          VARCHAR(50)            NOT NULL,
+    salary          INTEGER                NOT NULL,
     PRIMARY KEY (employeeId),
     CONSTRAINT FOREIGN KEY (projectCodeName) REFERENCES Project (projectCodeName) ON UPDATE CASCADE ON DELETE CASCADE,
     CONSTRAINT FOREIGN KEY (departmentID) REFERENCES Department (departmentID) ON UPDATE CASCADE ON DELETE CASCADE
@@ -68,9 +67,9 @@ CREATE TABLE Engineer
 CREATE TABLE Game
 (
     gameId          INTEGER AUTO_INCREMENT NOT NULL,
-    gameName        varchar(100)           NOT NULL UNIQUE,
-    projectCodeName varchar(50)            NOT NULL,
-    difficulty      INT,
+    gameName        VARCHAR(100)           NOT NULL UNIQUE,
+    projectCodeName VARCHAR(50)            NOT NULL,
+    difficulty      INTEGER,
     PRIMARY KEY (gameId, gameName),
     CONSTRAINT FOREIGN KEY (projectCodeName) REFERENCES Project (projectCodeName) ON UPDATE CASCADE ON DELETE CASCADE,
     CONSTRAINT FOREIGN KEY (gameName) REFERENCES GameType (gameName) ON UPDATE CASCADE ON DELETE CASCADE,
@@ -87,7 +86,7 @@ CREATE TABLE GameAttempt
     score        INT,
     dateStarted  DATETIME               NOT NULL,
     PRIMARY KEY (attemptId),
-    CONSTRAINT FOREIGN KEY (gameId) REFERENCES Game (gameId) ON UPDATE CASCADE ON DELETE RESTRICT ,
+    CONSTRAINT FOREIGN KEY (gameId) REFERENCES Game (gameId) ON UPDATE CASCADE ON DELETE RESTRICT,
     CONSTRAINT FOREIGN KEY (playerID) REFERENCES Player (playerID) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
@@ -99,7 +98,7 @@ CREATE TABLE TutorSession
     hours     INT                    NOT NULL,
     rate      FLOAT                  NOT NULL,
     totalPay  FLOAT                  NOT NULL,
-    notes     varchar(500),
+    notes     VARCHAR(500),
     PRIMARY KEY (sessionID, tutorID),
     CONSTRAINT FOREIGN KEY (tutorID) REFERENCES Tutor (tutorID) ON UPDATE CASCADE ON DELETE CASCADE,
     CONSTRAINT FOREIGN KEY (playerID) REFERENCES Player (playerID) ON UPDATE CASCADE ON DELETE CASCADE
@@ -108,9 +107,9 @@ CREATE TABLE TutorSession
 
 CREATE TABLE Submission
 (
-    submissionNumber INTEGER     NOT NULL,
-    attemptId        INTEGER     NOT NULL UNIQUE,
-    numIncorrect     INTEGER     NOT NULL,
+    submissionNumber INTEGER NOT NULL,
+    attemptId        INTEGER NOT NULL UNIQUE,
+    numIncorrect     INTEGER NOT NULL,
     PRIMARY KEY (attemptId, submissionNumber),
     CONSTRAINT FOREIGN KEY (attemptId) REFERENCES GameAttempt (attemptId) ON UPDATE CASCADE ON DELETE CASCADE
 );
@@ -119,10 +118,10 @@ CREATE TABLE Submission
 CREATE TABLE Guesses
 (
     attemptId        INTEGER NOT NULL,
-    submissionNumber INTEGER     NOT NULL,
+    submissionNumber INTEGER NOT NULL,
     valueRow         INTEGER NOT NULL,
     valueColumn      INTEGER NOT NULL,
-    charValue        char(1),
+    charValue        CHAR(1),
     PRIMARY KEY (attemptId, valueRow, valueColumn),
     CONSTRAINT FOREIGN KEY (attemptId, submissionNumber) REFERENCES Submission (attemptId, submissionNumber) ON UPDATE CASCADE ON DELETE CASCADE
 );
@@ -130,11 +129,11 @@ CREATE TABLE Guesses
 
 CREATE TABLE BackgroundCheck
 (
-    employeeId    INTEGER     NOT NULL UNIQUE,
-    isFelon       BOOLEAN     NOT NULL,
+    employeeId    INTEGER NOT NULL UNIQUE,
+    isFelon       BOOLEAN NOT NULL,
     isAdaEligible BOOLEAN,
     isVeteran     BOOLEAN,
-    SSN           varchar(10) UNIQUE,
+    SSN           VARCHAR(10) UNIQUE,
     PRIMARY KEY (employeeId),
     CONSTRAINT FOREIGN KEY (employeeId) REFERENCES Engineer (employeeId) ON UPDATE CASCADE
 );
@@ -152,10 +151,10 @@ CREATE TABLE Engineer_GameAttempt
 CREATE TABLE Answers
 (
     gameId      INTEGER      NOT NULL,
-    gameName    varchar(100) NOT NULL,
-    valueRow    INT          NOT NULL,
-    valueColumn INT          NOT NULL,
-    charValue   char(1),
+    gameName    VARCHAR(100) NOT NULL,
+    valueRow    INTEGER      NOT NULL,
+    valueColumn INTEGER      NOT NULL,
+    charValue   CHAR(1),
     PRIMARY KEY (gameId, gameName, valueRow, valueColumn),
     CONSTRAINT FOREIGN KEY (gameId) REFERENCES Game (gameId) ON UPDATE CASCADE ON DELETE CASCADE,
     CONSTRAINT FOREIGN KEY (gameName) REFERENCES Game (gameName) ON UPDATE CASCADE ON DELETE CASCADE
@@ -163,11 +162,11 @@ CREATE TABLE Answers
 
 CREATE TABLE Hints
 (
-    hint     varchar(100) NOT NULL UNIQUE,
-    gameId   INTEGER      NOT NULL,
-    gameName varchar(100) NOT NULL,
-    valueRow    INT          NOT NULL,
-    valueColumn INT          NOT NULL,
+    hint        VARCHAR(100) NOT NULL UNIQUE,
+    gameId      INTEGER      NOT NULL,
+    gameName    VARCHAR(100) NOT NULL,
+    valueRow    INTEGER      NOT NULL,
+    valueColumn INTEGER      NOT NULL,
     PRIMARY KEY (hint),
     CONSTRAINT FOREIGN KEY (gameId) REFERENCES Game (gameId) ON UPDATE CASCADE ON DELETE CASCADE,
     CONSTRAINT FOREIGN KEY (gameName) REFERENCES Game (gameName) ON UPDATE CASCADE ON DELETE CASCADE
@@ -175,12 +174,11 @@ CREATE TABLE Hints
 
 CREATE TABLE Clues
 (
-    gameId   INTEGER      NOT NULL,
-    valueRow    INT       NOT NULL,
-    valueColumn INT       NOT NULL,
-    clue     varchar(100),
-    isDown   BOOLEAN      NOT NULL,
-
+    gameId      INTEGER NOT NULL,
+    valueRow    INTEGER NOT NULL,
+    valueColumn INTEGER NOT NULL,
+    clue        VARCHAR(100),
+    isDown      BOOLEAN NOT NULL,
     PRIMARY KEY (gameID, valueRow, valueColumn, isDown),
     CONSTRAINT FOREIGN KEY (gameId) REFERENCES Game (gameId) ON UPDATE CASCADE ON DELETE CASCADE
 );

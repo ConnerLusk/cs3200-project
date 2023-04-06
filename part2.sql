@@ -94,8 +94,8 @@ CREATE TABLE GameAttempt
 CREATE TABLE TutorSession
 (
     sessionID INTEGER AUTO_INCREMENT NOT NULL,
-    tutorID   INTEGER                NOT NULL UNIQUE,
-    playerID  INTEGER                NOT NULL UNIQUE,
+    tutorID   INTEGER                NOT NULL,
+    playerID  INTEGER                NOT NULL,
     hours     INT                    NOT NULL,
     rate      FLOAT                  NOT NULL,
     totalPay  FLOAT                  NOT NULL,

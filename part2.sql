@@ -1,3 +1,4 @@
+drop schema KLMVGames;
 CREATE DATABASE KLMVGames;
 USE KLMVGames;
 

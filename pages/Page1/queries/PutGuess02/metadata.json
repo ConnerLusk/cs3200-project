@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\t\"attemptId\": 1,\n\t\"submissionNumber\": 1,\n\t\"valueRow\" : 0,\n\t\"valueColumn\" : 3,\n\t\"charValue\": {{Row0Column2.text}} }",
+      "body": "{\t\"attemptId\": 1,\n\t\"submissionNumber\": 1,\n\t\"valueRow\" : 0,\n\t\"valueColumn\" : 2,\n\t\"charValue\": {{Row0Column2.text}} }",
       "bodyFormData": [],
       "httpMethod": "PUT",
       "selfReferencingDataPaths": [],

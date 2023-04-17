@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\t\"attemptId\": 1,\n\t\"submissionNumber\": 1,\n\t\"valueRow\" : 4,\n\t\"valueColumn\" : 2,\n\t\"charValue\": {{Row4Column2.text}} }",
+      "body": "{\t\"attemptId\": 1,\n\t\"submissionNumber\": 1,\n\t\"valueRow\" : 4,\n\t\"valueColumn\" : 2,\n\t\"charValue\": {{Row4Column2A.text}} }",
       "bodyFormData": [],
       "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
@@ -52,7 +52,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Row4Column2.text"
+      "Row4Column2A.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

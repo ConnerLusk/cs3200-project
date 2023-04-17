@@ -2,4 +2,4 @@
 	"submissionNumber": 1,
 	"valueRow" : 2,
 	"valueColumn" : 0,
-	"charValue": {{Row2Column0.text}} }
+	"charValue": {{Row2Column0A.text}} }

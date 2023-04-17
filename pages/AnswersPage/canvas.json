@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 490,
+          "bottomRow": 410,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -27,7 +27,7 @@
           "leftColumn": 0,
           "children": [
             {
-              "widgetName": "Row1Column1",
+              "widgetName": "Row1Column1A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -81,7 +81,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row1Column2",
+              "widgetName": "Row1Column2A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -135,7 +135,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row1Column3",
+              "widgetName": "Row1Column3A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -189,7 +189,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row1Column4",
+              "widgetName": "Row1Column4A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -243,7 +243,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row3Column1",
+              "widgetName": "Row3Column1A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -297,7 +297,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row4Column1",
+              "widgetName": "Row4Column1A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -351,7 +351,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row3Column2",
+              "widgetName": "Row3Column2A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -405,7 +405,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row4Column2",
+              "widgetName": "Row4Column2A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -459,7 +459,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row3Column3",
+              "widgetName": "Row3Column3A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -513,7 +513,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row3Column4",
+              "widgetName": "Row3Column4A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -569,7 +569,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row4Column3",
+              "widgetName": "Row4Column3A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -623,7 +623,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row4Column4",
+              "widgetName": "Row4Column4A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -679,7 +679,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row3Column0",
+              "widgetName": "Row3Column0A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -735,7 +735,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row4Column0",
+              "widgetName": "Row4Column0A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -845,7 +845,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row2Column2",
+              "widgetName": "Row2Column2A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -899,7 +899,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row2Column3",
+              "widgetName": "Row2Column3A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -953,7 +953,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row2Column4",
+              "widgetName": "Row2Column4A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -1007,7 +1007,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row2Column0",
+              "widgetName": "Row2Column0A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -1063,7 +1063,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row0Column0",
+              "widgetName": "Row0Column0A",
               "dynamicPropertyPathList": [
                 {
                   "key": "text"
@@ -1124,7 +1124,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row1Column0",
+              "widgetName": "Row1Column0A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -1180,7 +1180,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row0Column2",
+              "widgetName": "Row0Column2A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -1234,7 +1234,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row0Column3",
+              "widgetName": "Row0Column3A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -1342,7 +1342,7 @@
               "minDynamicHeight": 4
             },
             {
-              "widgetName": "Row0Column1",
+              "widgetName": "Row0Column1A",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -1627,60 +1627,6 @@
               "responsiveBehavior": "fill",
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
-            },
-            {
-              "widgetName": "Text1",
-              "displayName": "Text",
-              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-              "searchTags": [
-                "typography",
-                "paragraph",
-                "label"
-              ],
-              "topRow": 45,
-              "bottomRow": 49,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "overflow": "NONE",
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 13.6875,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 10,
-              "dynamicBindingPathList": [
-                {
-                  "key": "truncateButtonColor"
-                },
-                {
-                  "key": "fontFamily"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "shouldTruncate": false,
-              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "",
-              "key": "rrq9t5uzcx",
-              "isDeprecated": false,
-              "rightColumn": 26,
-              "textAlign": "LEFT",
-              "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "bsnue7bvkl",
-              "minWidth": 450,
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "textColor": "#231F20",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1rem",
-              "minDynamicHeight": 4
             }
           ]
         },

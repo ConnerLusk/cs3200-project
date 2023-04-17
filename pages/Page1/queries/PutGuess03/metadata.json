@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "PutGuess01",
+    "name": "PutGuess03",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/gu/guesses/1/1/0/1"
+        "url": "web:4000/gu/guesses/1/1/0/3"
       },
       "invalids": [],
       "messages": [],
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\t\"attemptId\": 1,\n\t\"submissionNumber\": 1,\n\t\"valueRow\" : 0,\n\t\"valueColumn\" : 1,\n\t\"charValue\": {{Row0Column1.text}} }",
+      "body": "{\t\"attemptId\": 1,\n\t\"submissionNumber\": 1,\n\t\"valueRow\" : 0,\n\t\"valueColumn\" : 3,\n\t\"charValue\": {{Row0Column3.text}} }",
       "bodyFormData": [],
       "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
@@ -43,23 +43,19 @@
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Row0Column1.text"
+      "Row0Column3.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_PutGuess01",
+  "id": "Page1_PutGuess03",
   "deleted": false,
-  "gitSyncId": "643d9e136f841311d801fc20_643d9f576f841311d801fc33"
+  "gitSyncId": "643d9e136f841311d801fc20_643d9fb66f841311d801fc38"
 }

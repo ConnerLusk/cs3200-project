@@ -1,16 +1,16 @@
 {
   "pages": [
     {
+      "id": "Home",
+      "isDefault": true
+    },
+    {
       "id": "SubmissionPage",
       "isDefault": false
     },
     {
       "id": "AnswersPage",
       "isDefault": false
-    },
-    {
-      "id": "Home",
-      "isDefault": true
     },
     {
       "id": "EngineerPage",

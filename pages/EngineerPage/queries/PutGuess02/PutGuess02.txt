@@ -1,5 +1,0 @@
-{	"attemptId": 1,
-	"submissionNumber": 1,
-	"valueRow" : 0,
-	"valueColumn" : 2,
-	"charValue": {{Row0Column2.text}} }

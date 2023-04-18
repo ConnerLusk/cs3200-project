@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 970,
+          "bottomRow": 960,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -30,7 +30,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button1",
-              "onClick": "{{PutAnswers.run()}}",
+              "onClick": "{{PostAnswers.run()}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "dynamicPropertyPathList": [
                 {
@@ -103,8 +103,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 43,
-              "bottomRow": 47,
+              "topRow": 42,
+              "bottomRow": 46,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -115,7 +115,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 24,
+              "leftColumn": 35,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -128,7 +128,7 @@
               "isDisabled": false,
               "key": "4mvlybl0z8",
               "isDeprecated": false,
-              "rightColumn": 40,
+              "rightColumn": 51,
               "isDefaultClickDisabled": true,
               "widgetId": "3u7rycxvvz",
               "minWidth": 120,
@@ -151,7 +151,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 48,
+              "topRow": 47,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -167,9 +167,6 @@
                   "key": "boxShadow"
                 },
                 {
-                  "key": "tableData"
-                },
-                {
                   "key": "primaryColumns.clue.computedValue"
                 },
                 {
@@ -183,7 +180,7 @@
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 6,
+              "leftColumn": 23,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -235,7 +232,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 97,
+              "bottomRow": 96,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -370,12 +367,12 @@
               "key": "pugstl2456",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 57,
+              "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "6yoao0mdck",
               "allowAddNewRow": false,
               "minWidth": 450,
-              "tableData": "{{GetClues.data}}",
+              "tableData": "",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -1863,21 +1860,337 @@
               "iconAlign": "left",
               "defaultText": "",
               "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
+              "onSubmit": "{{storeValue(''Clue'',)}}",
+              "topRow": 47,
+              "type": "JSON_FORM_WIDGET",
+              "animateLoading": true,
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "submitButtonStyles.buttonColor"
+                },
+                {
+                  "key": "submitButtonStyles.borderRadius"
+                },
+                {
+                  "key": "resetButtonStyles.buttonColor"
+                },
+                {
+                  "key": "resetButtonStyles.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.cellBorderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.customField1.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.customField1.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Clue.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Clue.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Clue.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.isDown.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.isDown.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.isDown.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.children.valueColumn.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.valueColumn.accentColor"
+                },
+                {
+                  "key": "schema.__root_schema__.children.valueColumn.borderRadius"
+                }
+              ],
+              "showReset": false,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "autoGenerateForm": true,
+              "resetButtonStyles": {
+                "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                "boxShadow": "none",
+                "buttonVariant": "SECONDARY"
+              },
+              "isVisible": true,
+              "version": 1,
+              "isLoading": false,
+              "submitButtonLabel": "Add to Table",
+              "childStylesheet": {
+                "ARRAY": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none",
+                  "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "cellBoxShadow": "none"
+                },
+                "OBJECT": {
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none",
+                  "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "cellBoxShadow": "none"
+                },
+                "CHECKBOX": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                },
+                "CURRENCY_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "DATEPICKER": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "EMAIL_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "MULTISELECT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "MULTILINE_TEXT_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "NUMBER_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "PASSWORD_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "PHONE_NUMBER_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "RADIO_GROUP": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "boxShadow": "none"
+                },
+                "SELECT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "SWITCH": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "boxShadow": "none"
+                },
+                "TEXT_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "disabledWhenInvalid": true,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalBottomRow": 96,
+              "useSourceData": false,
+              "schema": {
+                "__root_schema__": {
+                  "children": {
+                    "customField1": {
+                      "children": {},
+                      "dataType": "number",
+                      "defaultValue": "0",
+                      "fieldType": "Number Input",
+                      "sourceData": 0,
+                      "isCustomField": true,
+                      "accessor": "valueRow",
+                      "identifier": "customField1",
+                      "position": 3,
+                      "originalIdentifier": "customField1",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                      "boxShadow": "none",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Row Value (0 to 4)",
+                      "minNum": "0",
+                      "maxNum": "4"
+                    },
+                    "Clue": {
+                      "children": {},
+                      "dataType": "string",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Clue))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "sourceData": "John",
+                      "isCustomField": false,
+                      "accessor": "Clue",
+                      "identifier": "Clue",
+                      "position": 0,
+                      "originalIdentifier": "Clue",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                      "boxShadow": "none",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Clue"
+                    },
+                    "isDown": {
+                      "children": {},
+                      "dataType": "number",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.isDown))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                      "fieldType": "Number Input",
+                      "sourceData": 0,
+                      "isCustomField": false,
+                      "accessor": "isDown",
+                      "identifier": "isDown",
+                      "position": 1,
+                      "originalIdentifier": "isDown",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                      "boxShadow": "none",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "isDown"
+                    },
+                    "valueColumn": {
+                      "children": {},
+                      "dataType": "number",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.valueColumn))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                      "fieldType": "Number Input",
+                      "sourceData": 0,
+                      "isCustomField": false,
+                      "accessor": "valueColumn",
+                      "identifier": "valueColumn",
+                      "position": 2,
+                      "originalIdentifier": "valueColumn",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                      "boxShadow": "none",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Column Value (0 to 4)",
+                      "minNum": "0",
+                      "maxNum": "4"
+                    }
+                  },
+                  "dataType": "object",
+                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                  "fieldType": "Object",
+                  "sourceData": {
+                    "name": "John",
+                    "date_of_birth": "20/02/1990",
+                    "employee_id": 1001
+                  },
+                  "isCustomField": false,
+                  "accessor": "__root_schema__",
+                  "identifier": "__root_schema__",
+                  "position": -1,
+                  "originalIdentifier": "__root_schema__",
+                  "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                  "boxShadow": "none",
+                  "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(ClueForm.sourceData, ClueForm.formData, ClueForm.fieldState)}}",
+                  "cellBoxShadow": "none",
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "isVisible": true,
+                  "labelTextSize": "0.875rem",
+                  "label": ""
+                }
+              },
+              "widgetName": "ClueForm",
+              "submitButtonStyles": {
+                "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                "boxShadow": "none",
+                "buttonVariant": "PRIMARY"
+              },
+              "dynamicPropertyPathList": [
+                {
+                  "key": "schema.__root_schema__.children.isDown.defaultValue"
+                }
+              ],
+              "displayName": "JSON Form",
+              "bottomRow": 96,
+              "fieldLimitExceeded": false,
+              "parentRowSpace": 10,
+              "title": "Insert Clue",
+              "hideCard": false,
+              "parentColumnSpace": 13.6875,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
+              "borderWidth": "1",
+              "sourceData": "{\n  \"Clue\": \"sky color\",\n  \"isDown\": 0,\n  \"valueColumn\": 0,\n\t\"valueRow\": 0\n}",
+              "resetButtonLabel": "Reset",
+              "key": "nkowdbn37u",
+              "backgroundColor": "#fff",
+              "isDeprecated": false,
+              "rightColumn": 21,
+              "widgetId": "6qnvfepmxa",
+              "minWidth": 450,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "scrollContents": true,
+              "responsiveBehavior": "fill",
+              "fixedFooter": true,
+              "originalTopRow": 47,
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 4
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "EngineerPage_GetClues",
-              "name": "GetClues",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "EngineerPage",

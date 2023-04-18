@@ -1,6 +1,0 @@
-{	"gameId": 1,
-	"gameName": 1,
- 	"rows": [0,1,2,3,4],
- 	"cols": [0,1,2,3,4],
-	"answers" : [{{Row0Column0E.inputText}},{{Row0Column1E.inputText}},{{Row0Column2E.inputText}},{{Row0Column3E.inputText}},{{Row0Column4.inputText}},{{Row1Column0E.inputText}},{{Row1Column1E.inputText}},{{Row1Column2E.inputText}},
-{{Row1Column3E.inputText}},{{Row1Column4E.inputText}},{{Row2Column0E.inputText}},{{Row2Column1E.inputText}},{{Row2Column3E.inputText}},{{Row2Column4E.inputText}},{{Row3Column0E.inputText}},{{Row3Column1E.inputText}},{{Row3Column2E.inputText}},{{Row3Column3E.inputText}},{{Row3Column4E.inputText}},{{Row4Column0E.inputText}},{{Row4Column1E.inputText}},{{Row4Column2E.inputText}},{{Row4Column3E.inputText}},{{Row4Column4E.inputText}}]

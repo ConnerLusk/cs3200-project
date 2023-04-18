@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/cl/clues/1/{{ClueForm.sourceData.valueRow}}/{{ClueForm.sourceData.valueColumn}}"
+        "url": "web:4000/cl/clues/1/{{FormvalueRow.inputText}}/{{FormvalueColumn.inputText}}"
       },
       "invalids": [],
       "messages": [],
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"clue\": {{ClueForm.sourceData.Clue}},\n\t\"isDown\": {{ClueForm.sourceData.isDown}},\n\t\"valueRow\": {{ClueForm.sourceData.valueRow}},\n\t\"valueColumn\": {{ClueForm.sourceData.valueColumn}}\n}",
+      "body": "{\n\t\"clue\": {{FormClue.inputText}},\n\t\"isDown\": {{FormisDown.inputText}},\n\t\"valueRow\": {{FormvalueRow.inputText}},\n\t\"valueColumn\": {{FormvalueColumn.inputText}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -55,10 +55,10 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "ClueForm.sourceData.Clue",
-      "ClueForm.sourceData.isDown",
-      "ClueForm.sourceData.valueColumn",
-      "ClueForm.sourceData.valueRow"
+      "FormClue.inputText",
+      "FormisDown.inputText",
+      "FormvalueColumn.inputText",
+      "FormvalueRow.inputText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -1,6 +1,6 @@
 {
-	"clue": {{ClueForm.sourceData.Clue}},
-	"isDown": {{ClueForm.sourceData.isDown}},
-	"valueRow": {{ClueForm.sourceData.valueRow}},
-	"valueColumn": {{ClueForm.sourceData.valueColumn}}
+	"clue": {{FormClue.inputText}},
+	"isDown": {{FormisDown.inputText}},
+	"valueRow": {{FormvalueRow.inputText}},
+	"valueColumn": {{FormvalueColumn.inputText}}
 }

@@ -10,6 +10,12 @@
   "unreadCommentThreads": 0,
   "color": "#D6D1F2",
   "icon": "system",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,

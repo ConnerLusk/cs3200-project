@@ -1,0 +1,6 @@
+{	
+	"fName": {{Update_FNAME.text}},
+	"lName" : {{Update_LName.text}},
+	"email" : {{Update_EMAIL.text}},
+	"birthday" : "1990-11-12"
+}

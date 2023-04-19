@@ -1,0 +1,5 @@
+{
+	"gameName": {{NewGameNameInput1.text}},
+	"projectName": {{NewProjectName.text}},
+	"difficulty": {{NewDifficultyInput.text}}
+}

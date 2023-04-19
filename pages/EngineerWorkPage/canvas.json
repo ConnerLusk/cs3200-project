@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1020,
+          "bottomRow": 980,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -1819,8 +1819,8 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 49,
-              "bottomRow": 102,
+              "topRow": 45,
+              "bottomRow": 98,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -2292,10 +2292,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 49,
+              "originalTopRow": 45,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 102,
+              "originalBottomRow": 98,
               "minDynamicHeight": 10
             }
           ]

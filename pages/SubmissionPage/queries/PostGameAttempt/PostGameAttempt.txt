@@ -1,0 +1,7 @@
+{
+	"playerID": {{PlayerID_GameAttemptForm.inputText}},
+	"gameId": {{GameID_GameAttemptForm.inputText}},
+	"isInProgress": 1,
+	"timeElapsed": 0,
+	"score": 0
+}

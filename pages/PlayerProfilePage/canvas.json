@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1580,
+          "bottomRow": 1380,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -1249,8 +1249,8 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 118,
-              "bottomRow": 158,
+              "topRow": 121,
+              "bottomRow": 138,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -1271,7 +1271,7 @@
                   "widgetName": "Canvas1CopyCopy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 400,
+                  "bottomRow": 170,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -1348,7 +1348,7 @@
                         "submit"
                       ],
                       "topRow": 6,
-                      "bottomRow": 38,
+                      "bottomRow": 15,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -1416,10 +1416,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 118,
+              "originalTopRow": 121,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 159,
+              "originalBottomRow": 138,
               "minDynamicHeight": 10
             }
           ]

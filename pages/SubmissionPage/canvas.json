@@ -30,7 +30,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button1",
-              "onClick": "{{PutGuess00.run}}\n{{PutGuess01.run}}\n{{PutGuess02.run}}\n{{PutGuess03.run}}\n{{PutGuess04.run}}\n{{PutGuess10.run}}{{PutGuess11.run}}\n{{PutGuess12.run}}\n{{PutGuess13.run}}\n{{PutGuess14.run}}\n{{PutGuess20.run}}\n{{PutGuess21.run}}\n{{PutGuess22.run}}{{PutGuess23.run}}\n{{PutGuess24.run}}\n{{PutGuess30.run}}\n{{PutGuess31.run}}\n{{PutGuess32.run}}\n{{PutGuess33.run}}\n{{PutGuess34.run}}{{PutGuess40.run}}\n{{PutGuess41.run}}{{PutGuess42.run}}{{PutGuess43.run}}{{PutGuess44.run}}\n{{PutSubmission.run()}}",
+              "onClick": "{{Promise.all([\n  PutGuess00.run(),\n  PutGuess01.run(),\n  PutGuess02.run(),\n  PutGuess03.run(),\n  PutGuess04.run(),\n  PutGuess10.run(),\n  PutGuess11.run(),\n  PutGuess12.run(),\n  PutGuess13.run(),\n  PutGuess14.run(),\n  PutGuess20.run(),\n  PutGuess21.run(),\n  PutGuess22.run(),\n  PutGuess23.run(),\n  PutGuess24.run(),\n  PutGuess30.run(),\n  PutGuess31.run(),\n  PutGuess32.run(),\n  PutGuess33.run(),\n  PutGuess34.run(),\n  PutGuess40.run(),\n  PutGuess41.run(),\n  PutGuess42.run(),\n  PutGuess43.run(),\n  PutGuess44.run(),\n  PutSubmission.run()\n]).then(() => {\n  console.log('All functions have completed.');\n}).catch((error) => {\n  console.log('An error occurred while running the functions: ', error);\n});}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "dynamicPropertyPathList": [
                 {

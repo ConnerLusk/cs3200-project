@@ -2068,7 +2068,7 @@
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 13.6875,
-              "leftColumn": 30,
+              "leftColumn": 31,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -2341,7 +2341,7 @@
               "key": "2jdierltb5",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 54,
+              "rightColumn": 55,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "pgjmumbyww",
               "minWidth": 450,

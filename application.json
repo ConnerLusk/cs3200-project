@@ -13,7 +13,11 @@
       "isDefault": false
     },
     {
-      "id": "EngineerPage",
+      "id": "EngineerWorkPage",
+      "isDefault": false
+    },
+    {
+      "id": "EngineerAdminPage",
       "isDefault": false
     }
   ],

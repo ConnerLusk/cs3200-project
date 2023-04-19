@@ -1,0 +1,8 @@
+{
+	"playerId": {{PlayerIDInput.inputText}},
+	"fName": {{fNameInput.inputText}},
+	"lName": {{lNameInput.inputText}},
+	"email": {{emailInput.inputText}},
+	"birthday": {{birthdayInput.inputText}},
+	"isPremium": {{isPremiumInput.inputText}}
+}

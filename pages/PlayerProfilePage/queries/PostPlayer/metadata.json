@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "PutPlayerUpdate",
+    "name": "PostPlayer",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/pl/players/1"
+        "url": "web:4000/pl/players"
       },
       "invalids": [],
       "messages": [],
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\t\"isPremium\" : 0,\n\t\"fName\": {{Update_FNAME.text}},\n\t\"lName\" : {{Update_LName.text}},\n\t\"email\" : {{Update_EMAIL.text}},\n\t\"birthday\" : \"1990-11-12\"\n}",
+      "body": "{\t\"isPremium\" : {{new_prem.text}}, \n\t\"fName\": {{new_fname.text}},\n\t\"lName\" : {{new_lname.text}},\n\t\"email\" : {{new_email.text}},\n\t\"birthday\" : \"1990-11-12\"\n}",
       "bodyFormData": [],
-      "httpMethod": "PUT",
+      "httpMethod": "POST",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -52,16 +52,17 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Update_EMAIL.text",
-      "Update_FNAME.text",
-      "Update_LName.text"
+      "new_email.text",
+      "new_fname.text",
+      "new_lname.text",
+      "new_prem.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "PlayerProfilePage_PutPlayerUpdate",
+  "id": "PlayerProfilePage_PostPlayer",
   "deleted": false,
-  "gitSyncId": "643f55959338bd37d978c64e_643f56979338bd37d978c69d"
+  "gitSyncId": "643f55959338bd37d978c64e_643f58899338bd37d978c6a1"
 }

@@ -1,0 +1,6 @@
+{	"isPremium" : {{new_prem.text}}, 
+	"fName": {{new_fname.text}},
+	"lName" : {{new_lname.text}},
+	"email" : {{new_email.text}},
+	"birthday" : "1990-11-12"
+}

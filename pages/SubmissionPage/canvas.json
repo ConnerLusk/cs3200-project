@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 920,
+          "bottomRow": 900,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -158,7 +158,7 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "columnUpdatedAt": 1681778610500,
-              "originalBottomRow": 92,
+              "originalBottomRow": 90,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -176,7 +176,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 92,
+              "bottomRow": 90,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,

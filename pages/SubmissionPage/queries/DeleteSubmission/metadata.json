@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "PutSubmission",
+    "name": "DeleteSubmission",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/s/submission/1/1"
+        "url": "web:4000/s/submission/{{DeleteSubmissionInput.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"attemptId\" : 1\n}",
+      "body": "",
       "bodyFormData": [],
-      "httpMethod": "PUT",
+      "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -43,17 +43,23 @@
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "datasourceUrl"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "DeleteSubmissionInput.text"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "SubmissionPage_PutSubmission",
+  "id": "SubmissionPage_DeleteSubmission",
   "deleted": false,
-  "gitSyncId": "643d9e136f841311d801fc20_643da8da6f841311d801fcbb"
+  "gitSyncId": "643de55a5338d51ab01e6d36_643f4402eaced64bfb7e1fe4"
 }
